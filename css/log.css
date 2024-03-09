@@ -1,0 +1,102 @@
+body {
+    font: 300 15px/1.7 'Montserrat', sans-serif;
+    color: #eeeeec;
+    background: #ffc000;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.reg {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #C00000;
+    border-radius: 5px;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Стили для заголовка формы регистрации */
+.reg h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #C00000;
+}
+
+/* Стили для меток */
+.reg .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #C00000;
+}
+
+/* Стили для полей ввода формы регистрации */
+.reg .form-control {
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #C00000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.reg .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.reg .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для дополнительного текста формы регистрации */
+.reg .form-text1,
+#emailHelp {
+    font-size: 14px;
+    color: #353746;
+    margin-top: 5px;
+}
+
+/* Стили для ссылок формы регистрации */
+.reg a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.reg a:hover {
+    color: #0056b3;
+}
